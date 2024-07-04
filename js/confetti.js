@@ -85,7 +85,7 @@ function render () {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
   });
 
-  if (confetti.length <= 10) initConfetti();
+  if (confetti.length <= 90) initConfetti();
 
   window.requestAnimationFrame(render);
 }
