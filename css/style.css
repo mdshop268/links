@@ -54,11 +54,11 @@ body {
 }
 
 .link {
-    width: 240px;
-    border: none;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    width: 240px;
+    border: none;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -67,7 +67,7 @@ body {
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
-    gap: 10px;
+    position: relative;
 }
 
 .link:hover {
@@ -106,9 +106,19 @@ body {
 }
 
 .icon {
-    margin-right: 10px;
+    position: absolute;
+    left: 15px;
     height: 20px;
     width: 20px;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    height: 12px;
+    width: 14px;
     vertical-align: middle;
 }
 
