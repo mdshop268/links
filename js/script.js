@@ -6,3 +6,5 @@ window.addEventListener('load', () => {
 
     footer.innerHTML = `&copy; ${year}. Усі права захищенні.`;
 });
+
+
