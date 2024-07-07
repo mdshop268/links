@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 setTimeout(() => {
                     link.classList.remove("show");
                     link.classList.add("hide");
-                }, index * 200); // Увеличиваем задержку между кнопками
+                }, index * 200);
             });
 
             setTimeout(() => {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 setTimeout(() => {
                     link.classList.add("show");
                     link.classList.remove("hide");
-                }, index * 200); // Увеличиваем задержку между кнопками
+                }, index * 200);
             });
         }
     });

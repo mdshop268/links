@@ -33,7 +33,7 @@ body {
     max-width: 400px;
     height: auto;
     margin: 10px;
-    position: relative; /* Добавляем относительное позиционирование */
+    position: relative;
 }
 
 .logo {
@@ -146,7 +146,7 @@ body {
 }
 
 .dropdown-content.show {
-    display: flex; /* Добавляем flex для отображения содержимого */
+    display: flex;
     visibility: visible;
     opacity: 1;
 }
@@ -156,7 +156,7 @@ body {
     width: 200px;
     font-size: 14px;
     margin-top: 5px;
-    margin-bottom: 0; /* Убираем отступ снизу */
+    margin-bottom: 0;
     transform: translateY(20px);
     opacity: 0;
 }
@@ -206,7 +206,6 @@ footer {
     }
 }
 
-/* Уменьшаем скорость анимации */
 @keyframes slideIn {
     0% {
         transform: translateY(-20px);
