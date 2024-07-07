@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 
 * {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, Roboto, 'Open Sans', sans-serif;
+    font-family: -apple-system, Roboto, sans-serif;
     box-sizing: border-box;
     user-select: none !important;
 }
@@ -79,7 +79,7 @@ body {
     transform: scale(1.01);
 }
 
-.link:hover icon {
+.link:hover .icon {
     transition: all .2s;
     transform: scale(1.1);
 }
@@ -94,7 +94,7 @@ body {
     transform: scale(1.05);
 }
 
-.link:active icon {
+.link:active .icon {
     transition: all .2s;
     transform: scale(1.2);
 }
@@ -130,15 +130,6 @@ body {
 .rotate {
     transition: all .5s;
     transform: rotate(90deg);
-}
-
-@keyframes rotateA {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(90deg);
-    }
 }
 
 .dropdown-content {
