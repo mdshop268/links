@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             setTimeout(() => {
                 dropdownContent.classList.remove("show");
+                links.forEach((link, index) => {
+                    link.classList.remove("hide");
+                });
             }, links.length * 200);
         } else {
             dropdownContent.classList.add("show");
