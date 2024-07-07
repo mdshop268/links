@@ -124,12 +124,12 @@ body {
     height: 12px;
     width: 14px;
     vertical-align: middle;
-    transition: all .5s;
+    transition: all .6s;
     transform: rotate(0deg);
 }
 
 .rotate {
-    transition: all .5s;
+    transition: all .6s;
     transform: rotate(90deg);
 }
 
@@ -138,11 +138,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 240px;
-    height: auto;
+    height: 130px;
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
+    transition: all .5s;
 }
 
 .dropdown-content.show {
@@ -161,12 +161,16 @@ body {
     opacity: 0;
 }
 
+#link1 {
+    margin-top: 0;
+}
+
 .dropdown-content .link.show {
-    animation: slideIn 0.5s forwards;
+    animation: slideIn .6s forwards;
 }
 
 .dropdown-content .link.hide {
-    animation: slideOut 0.5s forwards;
+    animation: slideOut .6s forwards;
 }
 
 .dropdown-content .link .icon {
