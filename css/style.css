@@ -33,6 +33,7 @@ body {
     max-width: 400px;
     height: auto;
     margin: 10px;
+    position: relative; /* Добавляем относительное позиционирование */
 }
 
 .logo {
@@ -135,14 +136,19 @@ body {
 .dropdown-content {
     display: none;
     flex-direction: column;
-    position: relative;
     align-items: center;
     width: 240px;
-    height: 200px;
+    height: auto;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
 }
 
-.show {
-    display: flex;
+.dropdown-content.show {
+    display: flex; /* Добавляем flex для отображения содержимого */
+    visibility: visible;
+    opacity: 1;
 }
 
 .dropdown-content .link {
@@ -150,15 +156,21 @@ body {
     width: 200px;
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 0; /* Убираем отступ снизу */
     transform: translateY(20px);
+    opacity: 0;
+}
+
+.dropdown-content .link.show {
+    animation: slideIn 0.5s forwards;
+}
+
+.dropdown-content .link.hide {
+    animation: slideOut 0.5s forwards;
 }
 
 .dropdown-content .link .icon {
     left: 6px;
-}
-
-.dropdown-content .link:hover {
-    background-color: #591bcd;
 }
 
 footer {
@@ -191,5 +203,28 @@ footer {
     .icons {
         height: 18px;
         margin-right: 8px;
+    }
+}
+
+/* Уменьшаем скорость анимации */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
     }
 }
