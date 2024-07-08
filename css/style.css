@@ -138,17 +138,17 @@ body {
     flex-direction: column;
     align-items: center;
     width: 240px;
-    height: 130px;
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    transition: all .5s;
+    animation: narrowing .6s;
 }
 
 .dropdown-content.show {
     display: flex;
     visibility: visible;
     opacity: 1;
+    animation: expansion .6s;
 }
 
 .dropdown-content .link {
@@ -229,5 +229,23 @@ footer {
     100% {
         transform: translateY(-20px);
         opacity: 0;
+    }
+}
+
+@keyframes expansion {
+    from {
+        height: 1px;
+    }
+    to {
+        height: 130px;
+    }
+}
+
+@keyframes narrowing {
+    from {
+        height: 130px;
+    }
+    to {
+        height: 1px;
     }
 }
