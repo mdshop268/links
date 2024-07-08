@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         arrow.classList.toggle("rotate");
 
         if (dropdownContent.classList.contains("show")) {
+            dropdownContent.classList.remove("show");
+            dropdownContent.classList.add("hide");
+
             [...links].reverse().forEach((link, index) => {
                 setTimeout(() => {
                     link.classList.remove("show");
@@ -25,18 +28,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
 
             setTimeout(() => {
-                dropdownContent.classList.remove("show");
+                dropdownContent.classList.remove("hide");
                 links.forEach((link, index) => {
                     link.classList.remove("hide");
                 });
             }, links.length * 200);
+        
         } else {
             dropdownContent.classList.add("show");
 
             links.forEach((link, index) => {
                 setTimeout(() => {
                     link.classList.add("show");
-                    link.classList.remove("hide");
                 }, index * 200);
             });
         }

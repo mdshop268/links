@@ -141,7 +141,6 @@ body {
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    animation: narrowing .6s;
 }
 
 .dropdown-content.show {
@@ -149,6 +148,13 @@ body {
     visibility: visible;
     opacity: 1;
     animation: expansion .6s;
+}
+
+.dropdown-content.hide {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    animation: narrowing .6s;
 }
 
 .dropdown-content .link {
@@ -211,22 +217,22 @@ footer {
 }
 
 @keyframes slideIn {
-    0% {
+    from {
         transform: translateY(-20px);
         opacity: 0;
     }
-    100% {
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes slideOut {
-    0% {
+    from {
         transform: translateY(0);
         opacity: 1;
     }
-    100% {
+    to {
         transform: translateY(-20px);
         opacity: 0;
     }
