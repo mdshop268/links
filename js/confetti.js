@@ -50,8 +50,6 @@ function initConfetti() {
       velocity: {
         x: randomRange(-25, 25),
         y: randomRange(0, -50) } });
-
-
   }
 }
 
@@ -85,7 +83,7 @@ function render () {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
   });
 
-  if (confetti.length <= 90) initConfetti();
+  if (confetti.length <= 50) initConfetti(); // 40
 
   window.requestAnimationFrame(render);
 }

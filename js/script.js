@@ -5,8 +5,6 @@ window.addEventListener('load', () => {
     footer.innerHTML = `&copy; ${year}. Усі права захищенні.`;
 });
 
-const openLink = window.open;
-
 document.addEventListener('DOMContentLoaded', (event) => {
     const dropbtn = document.querySelector('.dropbtn');
     const arrow = document.querySelector('.arrow');
@@ -20,6 +18,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             dropdownContent.classList.add("hide");
             dropdownContent.classList.remove("show");
 
+            setTimeout(() => {
+                dropdownContent.classList.remove("hide");
+            }, 800);
+
             [...links].reverse().forEach((link, index) => {
                 setTimeout(() => {
                     link.classList.remove("show");
@@ -28,7 +30,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
 
             setTimeout(() => {
-                dropdownContent.classList.remove("hide");
                 links.forEach((link, index) => {
                     link.classList.remove("hide");
                 });

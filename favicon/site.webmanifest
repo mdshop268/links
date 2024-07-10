@@ -1,5 +1,5 @@
 {
-    "name": "MD Shop",
+    "name": "MD Shop links",
     "short_name": "MD",
     "icons": [
         {
@@ -48,8 +48,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#121212",
+    "background_color": "#121212",
     "start_url": "https://mdshop268.github.io/links/",
     "display": "standalone",
     "orientation": "portrait"
