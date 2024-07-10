@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         arrow.classList.toggle("rotate");
 
         if (dropdownContent.classList.contains("show")) {
-            dropdownContent.classList.remove("show");
             dropdownContent.classList.add("hide");
+            dropdownContent.classList.remove("show");
 
             [...links].reverse().forEach((link, index) => {
                 setTimeout(() => {
