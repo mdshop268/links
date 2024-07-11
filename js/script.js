@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             setTimeout(() => {
                 dropdownContent.classList.remove("hide");
-            }, 800);
+            }, (links.length + 1) * 200);
 
             [...links].reverse().forEach((link, index) => {
                 setTimeout(() => {

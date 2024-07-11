@@ -124,12 +124,12 @@ body {
     height: 12px;
     width: 14px;
     vertical-align: middle;
-    transition: all .6s;
+    transition: all .8s;
     transform: rotate(0deg);
 }
 
 .rotate {
-    transition: all .6s;
+    transition: all .8s;
     transform: rotate(90deg);
 }
 
@@ -188,7 +188,7 @@ body {
     animation: slideOut .6s forwards;
 }
 
-.dropdown-content .link .icon {
+.dropdown-content .icon {
     left: 12px;
 }
 
