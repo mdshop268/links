@@ -214,7 +214,7 @@ footer {
     padding-top: 30px;
 }
 
-.confetti {
+.bg {
     position: absolute;
     z-index: -1;
     margin: 0;
