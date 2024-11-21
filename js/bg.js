@@ -21,8 +21,7 @@ const colors = [
   { front: 'turquoise', back: 'darkturquoise' }
 ];
 
-const currentMonth = new Date().getMonth();
-const isWinter = (currentMonth === 11 || currentMonth === 0 || currentMonth === 1);
+const isWinter = ([11, 0, 1].includes(new Date().getMonth()));
 
 function resizeCanvas() {
   canvas.width = window.innerWidth;
